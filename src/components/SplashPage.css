@@ -1,0 +1,24 @@
+.splash-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5; /* Modify based on Figma */
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: green;
+
+  }
+  h1.Name{
+    font-size: 3.0rem;
+  }
+  

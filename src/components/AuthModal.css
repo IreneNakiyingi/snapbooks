@@ -1,0 +1,103 @@
+/* Overlay: Full-screen semi-transparent background */
+.auth-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center; /* Center the modal horizontally */
+  align-items: center; /* Center the modal vertically */
+  z-index: 1000;
+}
+.logo{
+  display: flex;
+  align-content: center;
+}
+/* Modal: Centered with a fixed height */
+.auth-modal {
+  background-color: #f5f5f5;
+  width: 350px; /* Fixed width for the modal */
+  max-height: 500px; /* Limit height to prevent stretching */
+  padding: 1.5rem; /* Padding for space around form elements */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  position: relative; /* Needed to position the close button */
+  overflow: hidden; /* Prevents any overflow */
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Primary button styling */
+.primary-button {
+  background-color: #036d19;
+  color: white;
+  padding: 12px; /* Padding for the button */
+  margin-top: 16px; /* Space above the button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Full width for the button */
+}
+
+/* Social buttons */
+.social-buttons {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space out the buttons */
+  margin-top: 12px; /* Space above the social buttons */
+}
+
+.social-buttons button {
+  background: none; /* No background */
+  border: 1px solid #ddd; /* Add a border for visual separation */
+  border-radius: 4px;
+  padding: 8px; /* Padding for better clickability */
+  cursor: pointer;
+}
+
+/* Form labels */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px; /* Space above labels */
+}
+
+/* Input and select styling */
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px; /* Margin for inputs */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Link styling */
+a {
+  color: #036d19;
+  text-decoration: none;
+}
+.sign-up-container {
+  overflow-y: scroll;/* Allow vertical scrolling */
+  overflow-x: hidden;
+  width: 100%; /* or a specific width */
+  max-width: 400px; /* Example max width */
+  margin: 0 auto; /* Center the container */
+}
+
+.sign-up-form {
+  height: 300px; /* Set a fixed height for the form */
+   
+  border: 1px solid #ccc; /* Optional: Add a border */
+  padding: 10px; /* Optional: Add some padding */
+}
