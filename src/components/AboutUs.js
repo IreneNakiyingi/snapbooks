@@ -1,6 +1,6 @@
 // src/components/AboutUs.js
 import React from 'react';
-{/*import './AboutUs.css';*/}
+import './AboutUs.css';
 
 const AboutUs = () => {
   return (
