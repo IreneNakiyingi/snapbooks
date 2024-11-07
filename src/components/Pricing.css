@@ -1,0 +1,73 @@
+/* Pricing.css */
+.pricing {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricing h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-plans {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .pricing-plan {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .premium {
+    background: #e0ffe0;
+  }
+  
+  .pricing-plan h2 {
+    color: #007e33;
+  }
+  
+  .features-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+    text-align: left;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    color: #333;
+  }
+  
+  .checkmark {
+    color: #007e33;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  .try-free, .upgrade {
+    background-color: #007e33;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .try-free:hover, .upgrade:hover {
+    background-color: #005c23;
+  }
+  
