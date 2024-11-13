@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import AuthModal from './AuthModal';
 import './LandingPage.css';
 import snapBooksLogo from '../images/Asset 1.png';
+import FeaturesDropdown from './Features';
+import ResourcesDropdown from './Resources';
+import Footer from './Footer';
 
 const LandingPage = () => {
   // State to control the modal's visibility and type
@@ -35,8 +38,8 @@ const LandingPage = () => {
       </a>
       <div className="nav-links">
         <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#resources">Resources</a>
+        <FeaturesDropdown/>
+        <ResourcesDropdown/>
         
       </div>
       <div className="auth-buttons">
@@ -52,7 +55,7 @@ const LandingPage = () => {
         insights, and credit-ready reports.
       </p>
       <button className="cta-button">Input your email
-        <button>Sign Up</button>
+        <button onClick={openSignUp} className='signup-button'>Sign Up</button>
       </button>
     </header>
 
@@ -120,42 +123,7 @@ const LandingPage = () => {
 
     </section>
 
-    {/* Footer */}
-    <footer className='footer'>
-        <div className='footer-item-LOGO'>
-            <h1>SnapBooks</h1>
-            <p>Bridging the financial gap for Africa's MSMEs, one transaction ata at time</p>
-            <span className='Social-media'></span>
-        </div>
-        <div className='footer-item'>
-            <h1>FEATURES</h1>
-            <ul>
-                <li>Smart Capture</li>
-                <li>Financial dashboard</li>
-                <li>Credit Reports</li>
-                <li>AI Assistant</li>
-            </ul>
-        </div>
-        <div className='footer-item'>
-            <h1>RESOURCES</h1>
-            <ul>
-                <li><Link to="/about">About Us</Link></li>
-                <li><Link to="/faqs">FAQs</Link></li>
-                <li><Link to="/pricing">Pricing</Link></li>
-                <li>Blogs</li>
-                <li>Support</li>
-            </ul>
-        </div>
-        <div className='footer-item'>
-            <h1>INFORMATION</h1>
-            <ul>
-                <li>Terms of Service</li>
-                <li>Privacy Policy</li>
-            </ul>
-        </div>
-     
-    </footer>
-    <p>&copy; 2024 SnapBooks. All rights reserved.</p>
+    <Footer/>
       {/* AuthModal component for sign-in/sign-up */}
       
       {showAuthModal && (

@@ -3,30 +3,43 @@ import React, { useState } from 'react';
 import './FAQs.css';
 
 const FAQ = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
   const faqs = [
-    { question: "How do I sign up for SnapBook?", answer: "Click 'Sign Up' on our homepage, fill in your details, and follow the steps." },
-    { question: "Do I need any specific documents to start?", answer: "No, only basic personal information is required." },
-    // Add other FAQs as needed
+    {
+      question: "What is SnapBook?",
+      answer: "SnapBook is a comprehensive tool for managing your digital content and analytics.",
+    },
+    {
+      question: "How do I upgrade to Premium?",
+      answer: "To upgrade to Premium, go to the Pricing page and select the Premium plan.",
+    },
+    {
+      question: "Is there a free trial available?",
+      answer: "Yes, you can try SnapBook's Freemium plan at no cost.",
+    },
   ];
 
-  const [openFAQ, setOpenFAQ] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setOpenFAQ(openFAQ === index ? null : index);
+  const toggleAnswer = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
     <div className="faq">
-      <h1>Frequently Asked Questions</h1>
-      {faqs.map((faq, index) => (
-        <div key={index} className="faq-item">
-          <div className="faq-question" onClick={() => toggleFAQ(index)}>
-            {faq.question}
-            <span>{openFAQ === index ? '-' : '+'}</span>
+      <h1>FAQs</h1>
+      <div className="faq-list">
+        {faqs.map((faq, index) => (
+          <div key={index} className="faq-item">
+            <div className="faq-question" onClick={() => toggleAnswer(index)}>
+              <span>{faq.question}</span>
+              <button className="toggle-button">
+                {activeIndex === index ? "-" : "+"}
+              </button>
+            </div>
+            {activeIndex === index && <div className="faq-answer">{faq.answer}</div>}
           </div>
-          {openFAQ === index && <p className="faq-answer">{faq.answer}</p>}
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

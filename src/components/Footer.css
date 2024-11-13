@@ -1,0 +1,81 @@
+/* Footer.css */
+.footer {
+    background-color: #abe3c4;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 1 25%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.footer-item{
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .footer-item h1{
+    color: #212121;
+    font-size: 12;
+    font-family: 'Bricolage Grotesque';
+    font-weight: '700';
+    word-wrap: 'break-word'
+  }
+  .footer-item li{
+    list-style: none;
+    color: #212121;
+    font-size: 14;
+    font-family: 'Bricolage Grotesque';
+  }
+  
+.footer-item a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+  
+.footer-item a:hover {
+    color: #fff;
+}
+  
+/* Responsive styling */
+@media (max-width: 992px) {
+    .footer-item {
+        flex: 1 1 45%; /* Two columns on medium screens */
+        min-width: 200px;
+    }
+}
+  
+@media (max-width: 576px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .footer-item {
+        flex: 1 1 100%; /* Single column on small screens */
+        min-width: 100%;
+        max-width: 500px;
+    }
+}
+  
+/* Styling for copyright at the bottom */
+.footer-copyright {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+    color: #aaa;
+    font-size: 0.9em;
+    margin-top: 20px;
+    /* Ensures it stays at the bottom as a single line */
+    order: 1;
+}
