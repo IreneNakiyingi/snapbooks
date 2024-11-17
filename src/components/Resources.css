@@ -32,6 +32,8 @@
 }
 
 .dropdown-item:hover {
-    background-color: #f1f1f1;
+    background-color: #c9f0e7;
+    width: 74%;
+    border-radius: 7px;
 }
 

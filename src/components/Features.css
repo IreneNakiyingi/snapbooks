@@ -11,6 +11,11 @@
     color: inherit;
     padding: 8px;
 }
+.dropdown-button:hover{
+    background-color: rgb(169, 229, 210);
+    color: #300505;
+    border-radius: 7px;
+}
 
 .dropdown-content {
     display: flex;

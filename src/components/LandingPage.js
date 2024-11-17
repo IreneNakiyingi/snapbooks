@@ -37,7 +37,7 @@ const LandingPage = () => {
         <img src={snapBooksLogo} alt="SnapBooks Logo" />
       </a>
       <div className="nav-links">
-        <a href="#home">Home</a>
+        <a href="#home" className='home'>Home</a>
         <FeaturesDropdown/>
         <ResourcesDropdown/>
         
@@ -54,7 +54,8 @@ const LandingPage = () => {
       <p>Empowering small businesses with AI-driven bookeeping, financial
         insights, and credit-ready reports.
       </p>
-      <button className="cta-button">Input your email
+      <button className="cta-button"> 
+        <input type='email' placeholder='Input your email'/> 
         <button onClick={openSignUp} className='signup-button'>Sign Up</button>
       </button>
     </header>
@@ -67,7 +68,7 @@ const LandingPage = () => {
         <h2>AI-Powered Bookeeping</h2>
         <p>Turn handwritten records into digital data in seconds. SnapBooks uses AI to automate your 
             bookkeeping, making financial management seamless.</p>
-            <div id='feature-img'>
+            <div id='feature-img' className='feature'>
                 <img src="/images/feature1-icon.svg" alt="Feature 1" />
             </div>
       </div>
@@ -75,7 +76,7 @@ const LandingPage = () => {
         <h2>Instant Financial Insights</h2>
         <p>Access real-time analytics and get AI-driven summaries of cash flow, 
             expenses, and revenue, presented in a user-friendly dashboard.</p>
-        <div id='feature-img'>
+        <div id='feature-img' className='feature'>
             <img src="/images/feature2-icon.svg" alt="Feature 2" />
         </div>
       </div>
@@ -83,7 +84,7 @@ const LandingPage = () => {
         
         <h2>Credit-Ready Reports</h2>
         <p>Generate formal financial reports to help qualify for loans and funding opportunities.</p>
-        <div id='feature-img'>
+        <div id='feature-img' className='feature'>
             <img src="/images/feature3-icon.svg" alt="Feature 3" />
         </div>
       </div>
@@ -91,7 +92,7 @@ const LandingPage = () => {
         
         <h2>Conversational AI Support</h2>
         <p>Receive voice summaries and insights in your preferred language for an accessible, personalized experience.</p>
-        <div id='feature-img'>
+        <div id='feature-img' className='feature'>
             <img src="/images/feature4-icon.svg" alt="Feature 4" />
         </div>
       </div>

@@ -1,8 +1,8 @@
 /* Footer.css */
 .footer {
     background-color: #abe3c4;
-    color: #fff;
-    padding: 20px;
+    color: #230a0a;
+    padding: 10px;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -21,10 +21,12 @@
 .footer-item{
     display: inline-flex;
     flex-direction: column;
+    width: 400;
+    text-wrap:wrap;
   }
-  .footer-item h1{
+  .footer-item h3{
     color: #212121;
-    font-size: 12;
+    font-size: 10;
     font-family: 'Bricolage Grotesque';
     font-weight: '700';
     word-wrap: 'break-word'
@@ -37,7 +39,7 @@
   }
   
 .footer-item a {
-    color: #bbb;
+    color: #212121;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -73,7 +75,7 @@
     padding-top: 15px;
     width: 100%;
     text-align: center;
-    color: #aaa;
+    color: #091e0f;
     font-size: 0.9em;
     margin-top: 20px;
     /* Ensures it stays at the bottom as a single line */
