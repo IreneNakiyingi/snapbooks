@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './SplashPage.css';
+import Logo from '../images/Snapbooks Logo.svg';
 
 const SplashPage = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ const SplashPage = () => {
     <div className="splash-container">
       <div className="logo">
         {/* Replace with actual logo or image */}
-        <img src="/logo.png" alt="SnapBooks Logo" />
+        <img src={Logo} alt="SnapBooks Logo" />
       </div>
       <h1>Empower</h1>
       <h1 className='Name'>SnapBooks</h1>

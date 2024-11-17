@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import AuthModal from './AuthModal';
 import './LandingPage.css';
 import snapBooksLogo from '../images/Asset 1.png';
+import FeaturesDropdown from './Features';
+import ResourcesDropdown from './Resources';
+import Footer from './Footer';
 
 const LandingPage = () => {
   // State to control the modal's visibility and type
@@ -34,9 +37,9 @@ const LandingPage = () => {
         <img src={snapBooksLogo} alt="SnapBooks Logo" />
       </a>
       <div className="nav-links">
-        <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#resources">Resources</a>
+        <a href="#home" className='home'>Home</a>
+        <FeaturesDropdown/>
+        <ResourcesDropdown/>
         
       </div>
       <div className="auth-buttons">
@@ -51,8 +54,9 @@ const LandingPage = () => {
       <p>Empowering small businesses with AI-driven bookeeping, financial
         insights, and credit-ready reports.
       </p>
-      <button className="cta-button">Input your email
-        <button>Sign Up</button>
+      <button className="cta-button"> 
+        <input type='email' placeholder='Input your email'/> 
+        <button onClick={openSignUp} className='signup-button'>Sign Up</button>
       </button>
     </header>
 
@@ -64,7 +68,7 @@ const LandingPage = () => {
         <h2>AI-Powered Bookeeping</h2>
         <p>Turn handwritten records into digital data in seconds. SnapBooks uses AI to automate your 
             bookkeeping, making financial management seamless.</p>
-            <div id='feature-img'>
+            <div id='feature-img' className='feature'>
                 <img src="/images/feature1-icon.svg" alt="Feature 1" />
             </div>
       </div>
@@ -72,7 +76,7 @@ const LandingPage = () => {
         <h2>Instant Financial Insights</h2>
         <p>Access real-time analytics and get AI-driven summaries of cash flow, 
             expenses, and revenue, presented in a user-friendly dashboard.</p>
-        <div id='feature-img'>
+        <div id='feature-img' className='feature'>
             <img src="/images/feature2-icon.svg" alt="Feature 2" />
         </div>
       </div>
@@ -80,7 +84,7 @@ const LandingPage = () => {
         
         <h2>Credit-Ready Reports</h2>
         <p>Generate formal financial reports to help qualify for loans and funding opportunities.</p>
-        <div id='feature-img'>
+        <div id='feature-img' className='feature'>
             <img src="/images/feature3-icon.svg" alt="Feature 3" />
         </div>
       </div>
@@ -88,7 +92,7 @@ const LandingPage = () => {
         
         <h2>Conversational AI Support</h2>
         <p>Receive voice summaries and insights in your preferred language for an accessible, personalized experience.</p>
-        <div id='feature-img'>
+        <div id='feature-img' className='feature'>
             <img src="/images/feature4-icon.svg" alt="Feature 4" />
         </div>
       </div>
@@ -120,42 +124,7 @@ const LandingPage = () => {
 
     </section>
 
-    {/* Footer */}
-    <footer className='footer'>
-        <div className='footer-item-LOGO'>
-            <h1>SnapBooks</h1>
-            <p>Bridging the financial gap for Africa's MSMEs, one transaction ata at time</p>
-            <span className='Social-media'></span>
-        </div>
-        <div className='footer-item'>
-            <h1>FEATURES</h1>
-            <ul>
-                <li>Smart Capture</li>
-                <li>Financial dashboard</li>
-                <li>Credit Reports</li>
-                <li>AI Assistant</li>
-            </ul>
-        </div>
-        <div className='footer-item'>
-            <h1>RESOURCES</h1>
-            <ul>
-                <li><Link to="/about">About Us</Link></li>
-                <li><Link to="/faqs">FAQs</Link></li>
-                <li><Link to="/pricing">Pricing</Link></li>
-                <li>Blogs</li>
-                <li>Support</li>
-            </ul>
-        </div>
-        <div className='footer-item'>
-            <h1>INFORMATION</h1>
-            <ul>
-                <li>Terms of Service</li>
-                <li>Privacy Policy</li>
-            </ul>
-        </div>
-     
-    </footer>
-    <p>&copy; 2024 SnapBooks. All rights reserved.</p>
+    <Footer/>
       {/* AuthModal component for sign-in/sign-up */}
       
       {showAuthModal && (
