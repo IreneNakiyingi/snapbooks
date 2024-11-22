@@ -2,6 +2,7 @@
 import React from 'react';
 import './AboutUs.css';
 import Footer from './Footer';
+import NavBar from './Nav';
 
 // src/components/AboutUsHeader.js
 
@@ -20,6 +21,7 @@ const values = [
 
 const AboutUsHeader = () => (
   <div className='about-us-page'>
+    <NavBar/>
   <div className="about-header">
     <h1>Who are we?</h1>
     <p>

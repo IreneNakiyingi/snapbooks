@@ -1,6 +1,8 @@
 // Pricing.js
 import React from 'react';
 import './Pricing.css';
+import Footer from './Footer';
+import NavBar from './Nav';
 
 const Pricing = () => {
   const featuresFreemium = [
@@ -19,6 +21,7 @@ const Pricing = () => {
 
   return (
     <div className="pricing">
+      <NavBar/>
       <h1>Pricing</h1>
       <div className="pricing-plans">
         <div className="pricing-plan">
@@ -46,6 +49,9 @@ const Pricing = () => {
           </ul>
           <button className="upgrade">Upgrade to Premium</button>
         </div>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );
