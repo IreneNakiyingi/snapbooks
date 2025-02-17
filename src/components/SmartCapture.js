@@ -58,14 +58,14 @@ const SmartCapturePage = () => {
     <div className="smart-capture-page">
       {/* Left-side Navigation */}
       <aside className="side-nav">
-        <div className="logo">SnapBooks</div>
+        <div className="logo">Awaledger</div>
         <ul className="menu">
           <li><a href="/dashboard">Dashboard</a></li>
           <li className="active"><a href="/smart-capture">Smart Capture</a></li>
           <li><a href="/ai-insights">AI Insights</a></li>
           <li><a href="/credit-reports">Credit Reports</a></li>
           <li><a href="/goals-budgeting">Goals & Budgeting</a></li>
-          <li><a href="/assistant">SnapBooks Assistant</a></li>
+          <li><a href="/assistant">Awaledger Assistant</a></li>
           <li><a href="/resources">Resources</a></li>
           <li><a href="/settings">Settings</a></li>
         </ul>

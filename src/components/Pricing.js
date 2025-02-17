@@ -34,7 +34,7 @@ const Pricing = () => {
               </li>
             ))}
           </ul>
-          <button className="try-free">Try SnapBook for free</button>
+          <button className="try-free">Try Awaledger for free</button>
         </div>
 
         <div className="pricing-plan premium">

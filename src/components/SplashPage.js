@@ -20,7 +20,7 @@ const SplashPage = () => {
         <img src={Logo} alt="SnapBooks Logo" />
       </div>
       <h1>Empower</h1>
-      <h1 className='Name'>SnapBooks</h1>
+      <h1 className='Name'>Awaledger</h1>
     </div>
   );
 };
