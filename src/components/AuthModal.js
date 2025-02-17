@@ -16,9 +16,9 @@ const AuthModal = ({ isSignUp, onClose, setIsSignUp }) => {
 const SignUpForm = ({ setIsSignUp }) => (
   <div className='sign-up-container'>
     <a href="/" className="logo">
-        <img src={snapBooksLogo} alt="SnapBooks Logo" />
+        <img src={snapBooksLogo} alt="Awaledger Logo" />
       </a>
-    <p>Get Started with SnapBooks</p>
+    <p>Get Started with Awaledger</p>
     <p>Join thousands of MSMEs transforming their finances with AI-driven insights.</p>
     <div className='sign-up-form'>
 
@@ -63,8 +63,8 @@ const SignUpForm = ({ setIsSignUp }) => (
 
 const SignInForm = ({ setIsSignUp }) => (
   <div>
-    <h2>SnapBooks</h2>
-    <p>Welcome Back to SnapBook</p>
+    <h2>Awaledger</h2>
+    <p>Welcome Back to Awaledger</p>
     <p>Log in to access your dashboard and manage your finances.</p>
     <form>
       <label>Email Address</label>
@@ -82,7 +82,7 @@ const SignInForm = ({ setIsSignUp }) => (
       <button className="facebook">F</button>
       <button className="apple">A</button>
     </div>
-    <p>New to SnapBooks? <a href="#" onClick={() => setIsSignUp(true)}>Create an account</a></p>
+    <p>New to Awaledger? <a href="#" onClick={() => setIsSignUp(true)}>Create an account</a></p>
   </div>
 );
 

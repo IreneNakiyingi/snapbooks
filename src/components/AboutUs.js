@@ -25,21 +25,21 @@ const AboutUsHeader = () => (
   <div className="about-header">
     <h1>Who are we?</h1>
     <p>
-      Founded by a team of financial analysts, designers, and engineers, SnapBooks aims to aid Africa's MSMEs in transforming
+      Founded by a team of financial analysts, designers, and engineers, Awaledger aims to aid Africa's MSMEs in transforming
       their financial records into digital format, bridging the financial gap, and empowering them with financial knowledge.
     </p>
   </div>
   <div className="mission">
     <h2>Our Mission</h2>
     <p>
-      At SnapBooks, we believe every business should have access to the tools and knowledge needed for success. We aim to
+      At Awaledger, we believe every business should have access to the tools and knowledge needed for success. We aim to
       bridge the financial gap for Africa's MSMEs by providing easy-to-use tools for efficient financial management.
     </p>
   </div>
   <div className="vision">
     <h2>Our Vision</h2>
     <p>
-      SnapBooks aims to empower and transform African MSMEs by offering technology that fosters business growth and enables
+      Awaledger aims to empower and transform African MSMEs by offering technology that fosters business growth and enables
       financial independence.
     </p>
   </div>

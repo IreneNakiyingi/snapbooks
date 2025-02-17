@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className='footer-item footer-LOGO'>
-            <h2>SnapBooks</h2>
+            <h2>Awaledger</h2>
             <p>Bridging the financial gap for Africa's MSMEs, one transaction at a time.</p>
             <span className='Social-media'></span>
         </div>
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
     
         <div className="footer-copyright">
-            <p>&copy; 2024 SnapBooks. All rights reserved.</p>
+            <p>&copy; 2024 Awaledger. All rights reserved.</p>
         </div>
       </div>
     </footer>
