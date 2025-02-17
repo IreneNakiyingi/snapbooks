@@ -1,0 +1,10 @@
+.contactform{
+    width: 100%;
+}
+.submit{
+    margin-bottom: 10px;
+    justify-self: end;
+}
+.submit:hover{
+    background-color: green;
+}

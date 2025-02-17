@@ -7,6 +7,7 @@ import AboutUs from './components/AboutUs';
 import FAQs from './components/FAQs';
 import Pricing from './components/Pricing';
 import SmartCapturePage from './components/SmartCapture';
+import Support from './components/Support';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/landing" element={<LandingPage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/faqs" element={<FAQs />} />
+        <Route path='/support' element={<Support/>} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/smart-capture" element = {<SmartCapturePage/>} />
       </Routes>
