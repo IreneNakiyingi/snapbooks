@@ -1,12 +1,13 @@
 // src/components/FeaturesDropdown.js
 import React, { useState } from 'react';
 import './Features.css';
+import { Link } from 'react-router-dom';
 
 const featuresList = [
-    { name: "Smart Capture", href: "#smart-capture" },
-    { name: "Financial Dashboard", href: "#financial-dashboard" },
-    { name: "Credit Reports", href: "#credit-reports" },
-    { name: "AI Assistant", href: "#ai-assistant" },
+    { name: "Smart Capture", to : "/smart-capture"},
+    { name: "Financial Dashboard", to: "/financial-dashboard" },
+    { name: "Credit Reports", to: "/credit-reports" },
+    { name: "AI Assistant", to: "/ai-assistant" },
 ];
 
 const FeaturesDropdown = () => {
@@ -17,14 +18,21 @@ const FeaturesDropdown = () => {
     };
 
     return (
-        <div className="features-dropdown" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+        <div 
+        className="features-dropdown" 
+        onMouseEnter={toggleDropdown} 
+        onMouseLeave={toggleDropdown}>
             <button className="dropdown-button">Features</button>
             {isOpen && (
                 <div className="dropdown-content">
+
                     {featuresList.map(feature => (
-                        <a key={feature.name} href={feature.href} className="dropdown-item">
+                        <Link 
+                        key={feature.name} 
+                        to={feature.to} 
+                        className="dropdown-item">
                             {feature.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
             )}

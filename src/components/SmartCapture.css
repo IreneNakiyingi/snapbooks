@@ -1,0 +1,140 @@
+/* File: SmartCapture.css */
+
+/* Overall Layout */
+.smart-capture {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    background-color: #f6f9f8;
+  }
+  
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    color: #2d7f5e;
+  }
+  
+  .header p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Upload Section */
+  .upload-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .upload-card {
+    text-align: center;
+    border: 2px dashed #cce5d4;
+    border-radius: 10px;
+    padding: 30px;
+    width: 350px;
+    background: #fff;
+  }
+  
+  .upload-icon {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .upload-button {
+    background: #2d7f5e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .upload-button:hover {
+    background: #27674f;
+  }
+  
+  .upload-instructions {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .upload-gallery {
+    color: #2d7f5e;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Recent Captures Section */
+  .recent-captures {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .recent-header h2 {
+    color: #2d7f5e;
+    font-size: 18px;
+  }
+  
+  .view-all {
+    color: #2d7f5e;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  
+  .captures-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .captures-table th,
+  .captures-table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .captures-table th {
+    background: #f0f0f0;
+    color: #666;
+  }
+  
+  .captures-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .thumbnail {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Status Styles */
+  .status {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .status.saved {
+    color: #2d7f5e;
+  }
+  
+  .status.pending {
+    color: #e59400;
+  }
+  

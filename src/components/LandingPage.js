@@ -1,14 +1,13 @@
 // src/components/LandingPage.js
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import AuthModal from './AuthModal';
 import './LandingPage.css';
-import snapBooksLogo from '../images/Asset 1.png';
-import FeaturesDropdown from './Features';
-import ResourcesDropdown from './Resources';
 import Footer from './Footer';
+import NavBar from './Nav';
+
 
 const LandingPage = () => {
+  
   // State to control the modal's visibility and type
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [isSignUp, setIsSignUp] = useState(true);
@@ -31,7 +30,10 @@ const LandingPage = () => {
 
   return (
     <div className="landing-container">
+    
     {/* Navigation Bar */}
+    <NavBar/>
+    {/*
     <nav className="nav-bar">
       <a href="/" className="logo">
         <img src={snapBooksLogo} alt="SnapBooks Logo" />
@@ -46,7 +48,7 @@ const LandingPage = () => {
       <button onClick={openSignUp} className='signup-button'>Signup</button>
       <button onClick={openSignIn} className='signin-button'>SignIn</button>
       </div>
-    </nav>
+    </nav> */}
 
     {/* Hero Section */}
     <header className="hero-section">

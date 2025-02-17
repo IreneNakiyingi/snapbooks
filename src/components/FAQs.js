@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './FAQs.css';
 import Footer from './Footer';
+import NavBar from './Nav';
 const faqs = [
     {
       question: "What is SnapBooks?",
@@ -53,6 +54,7 @@ const FAQ = () => {
 
   return (
     <div className="faq">
+      <NavBar/>
       <h1>FAQs</h1>
       <div className="faq-list">
         {faqs.map((faq, index) => (
