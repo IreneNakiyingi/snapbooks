@@ -5,11 +5,11 @@ import Footer from './Footer';
 import NavBar from './Nav';
 const faqs = [
     {
-      question: "What is SnapBooks?",
-      answer: "SnapBooks is a comprehensive tool for managing your digital content and analytics.",
+      question: "What is Awaledger?",
+      answer: "Awaledger is a comprehensive tool for managing your digital content and analytics.",
     },
     {
-      question: "How do I sign up for Snapbooks?",
+      question: "How do I sign up for Awaledger?",
       answer: "Click 'Sign Up' on our homepage, fill in your details and follow the simple steps to set up your account."
     },
     {
@@ -21,16 +21,16 @@ const faqs = [
       answer: "xxx"
     },
     {
-      question: "Can i access SnapBooks on mobile and desktop?",
-      answer: "For now, SnapBooks is only available on desktop."
+      question: "Can I access Awaledger on mobile and desktop?",
+      answer: "For now, Awaledger is only available on desktop."
     },
     {
-      question: "Is my data safe with SnapBooks?",
+      question: "Is my data safe with Awaledger?",
       answer: "Yes, any information deemed sensitive is encrypted and protected from malware."
     },
     {
       question: "Is there a free trial available?",
-      answer: "Yes, you can try SnapBook's Freemium plan at no cost.",
+      answer: "Yes, you can try Awaledger's Freemium plan at no cost.",
     },
     {
       question: "What is included in the free version?",
@@ -72,7 +72,7 @@ const FAQ = () => {
       <div className='contact-form'>
         <h2>Still have Questions?</h2>
         <p>Contact us via any of our social media platforms or chat</p>
-        <button className='contact-form contact-button'>Contact Us</button>
+        <button className='contact-button'>Contact Us</button>
       </div>
       <div>
         <Footer/>

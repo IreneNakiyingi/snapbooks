@@ -41,6 +41,8 @@
     color: #555;
   }
   .contact-form{
+    width: 50%;
+    justify-self: center;
     border: 2px solid #007e33;
     border-radius: 6px;
     padding-left: 10px;
@@ -51,6 +53,13 @@
     align-content: center;
   }
   .contact-button{
-    align-items: center;
+    margin-bottom: 20px;
+    width: 50%;
+    justify-items: center;
+    border-radius: 10px;
+
+  }
+  .contact-button:hover{
+    background-color: rgb(170, 248, 227);
   }
   
