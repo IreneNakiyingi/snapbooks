@@ -7,7 +7,7 @@ import AboutUs from './components/AboutUs';
 import FAQs from './components/FAQs';
 import Pricing from './components/Pricing';
 import SmartCapturePage from './components/SmartCapture';
-import Support from './components/Support';
+
 
 function App() {
   return (
